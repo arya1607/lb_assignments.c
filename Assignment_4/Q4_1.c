@@ -1,0 +1,27 @@
+//Accept one number from user and check whether that number is positive, negative, or zero
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void CheckNumber(int iValue)
+{
+    if (iValue > 0) {
+        printf("Positive Number\n");
+    } else if (iValue < 0) {
+        printf("Negative Number\n");
+    } else {
+        printf("Zero\n");
+    }
+}
+
+int main()
+{
+    int iValue = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &iValue);
+
+    CheckNumber(iValue);
+
+    return EXIT_SUCCESS;
+}
